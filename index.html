@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: antiquewhite;
+        }
+             .container {
+            background-color: red;
+            height: 20vmin;
+            width: 20vmin;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            z-index: 1;
+
+            &>p {
+                z-index: 3;
+            }
+        }
+
+        .c1 {
+            background-color: rgb(0, 0, 0);
+            height: 20vmin;
+            width: 20vmin;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            z-index: 2;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+
+        .snake {
+            display: flex;
+            align-items: center;
+            transform: rotate(90deg);
+        }
+
+        .segment {
+            width: 20px;
+            height: 20px;
+            background-color: #3CB371;
+            border-radius: 3px;
+            margin-right: 2px;
+        }
+
+        .head {
+            background-color: #2E8B57;
+            border-radius: 50% 0 0 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .eye{
+            transform: rotate(90deg);
+        }
+
+        .tail {
+            border-radius: 0 50% 50% 0;
+            background-color: #3CB371;
+        }
+        .segment1{
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <p>aalu</p>
+        <div class="c1"></div>
+    </div> -->
+    <div class="snake">
+        <div class="segment head">
+            <div class="eye">..</div>
+            )
+        </div>
+        <div class="segment segment1"></div>
+        <div class="segment segment2"></div>
+        <div class="segment segment3"></div>
+        <div class="segment segment4 tail"></div>
+    </div>
+
+</body>
+
+</html>
