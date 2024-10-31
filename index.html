@@ -58,6 +58,7 @@
             display: flex;
             align-items: center;
             transform: rotate(90deg);
+            border: 1px solid red;
         }
 
         .segment {
@@ -75,7 +76,8 @@
             align-items: center;
             justify-content: center;
         }
-        .eye{
+
+        .eye {
             transform: rotate(90deg);
         }
 
@@ -83,26 +85,37 @@
             border-radius: 0 50% 50% 0;
             background-color: #3CB371;
         }
-        .segment1{
-
+        .snake2{
+            height: calc(20vmin);
+            width: 5vmin;
+            border: 1px solid black;
+        }
+        .part{
+            height: calc((100%)/5);
+            background-color: red;
+            margin: 1px;
         }
     </style>
 </head>
 
 <body>
-    <!-- <div class="container">
-        <p>aalu</p>
-        <div class="c1"></div>
-    </div> -->
     <div class="snake">
         <div class="segment head">
             <div class="eye">..</div>
             )
         </div>
-        <div class="segment segment1"></div>
-        <div class="segment segment2"></div>
-        <div class="segment segment3"></div>
-        <div class="segment segment4 tail"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment tail"></div>
+    </div>
+
+    <div class="snake2">
+        <div class="part hd"></div>
+        <div class="part"></div>
+        <div class="part"></div>
+        <div class="part"></div>
+        <div class="part tl"></div>
     </div>
 
 </body>
